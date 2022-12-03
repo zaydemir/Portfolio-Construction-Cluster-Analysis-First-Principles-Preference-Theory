@@ -12,6 +12,8 @@ We employ both non-spherical (e.g. k-Means and hierarchical) and spherical (e.g.
 
 The table below summarizes the various tests and visual inspections conducted and outputted by this script:
 
+
+
 Purpose	Output File Name
 Determine the optimal number of clusters. 	R_NonSphericalOptimalNCluster_2000_norm.pdf
 Multiple statistics used (within sum of squares, gap, silhouette width etc).	
@@ -29,8 +31,7 @@ User can choose the utility specification and rerun the report.
 Visual inspection of sector weights and utility rendered by clustering technique.	R_folioExposures_inspection_10000_norm_CPTUtility_100.pdf
 User can choose the utility specification and rerun the report.	
 Cluster similarity tests based on various methods (Rand, HA, FM, Jaccard) for each cluster method	clusterSimilarityTests.csv
-![image](https://user-images.githubusercontent.com/66026542/205449228-3746d519-1857-4ed4-b8dc-ca59047cedb8.png)
-
+![image](https://user-images.githubusercontent.com/66026542/205449309-20244ceb-139b-4164-82a3-2752baa04b00.png)
 
 
 
