@@ -15,7 +15,23 @@ The table below summarizes the various tests and visual inspections conducted an
 Purpose	Output File Name
 Determine the optimal number of clusters. 	R_NonSphericalOptimalNCluster_2000_norm.pdf
 Multiple statistics used (within sum of squares, gap, silhouette width etc).	
-![image](https://user-images.githubusercontent.com/66026542/205449215-689d1017-f31a-45f3-897d-df19e2944ae4.png)
+Will be used as input for k-means and hierarchical cluster analysis.	
+Determine wheter we can apply cluster analyses to this data	hopkinsStat.csv
+Visual inspection of k-Means and HC clusters	R_nonSphericalCluster_inspection_1000_norm.pdf
+Visual inspection of dbscan clusters	R_SphericalCluster_inspection_10000_norm.pdf
+Portfolio permance by cluster technique type and various performance metrics.	R_folioPerformance_inspection_10000_norm_CPTUtility_100.pdf
+User can choose the utility specification and rerun the report.	
+XLS Worksheet with 3 tabs	R_folioCompositionSortedByUtilityCPTUtility_100.xlsx
+Tab "Number of Positions": number of asset classes in the portfolio by clustering dimensions.	
+Tab "FI vs Equity": portfolio split into FI and Equity by clustering method and dimension.	
+Tab "FI Composition - FTQ - Rates": portfolio breakdown within FI sectors.	
+User can choose the utility specification and rerun the report.	
+Visual inspection of sector weights and utility rendered by clustering technique.	R_folioExposures_inspection_10000_norm_CPTUtility_100.pdf
+User can choose the utility specification and rerun the report.	
+Cluster similarity tests based on various methods (Rand, HA, FM, Jaccard) for each cluster method	clusterSimilarityTests.csv
+![image](https://user-images.githubusercontent.com/66026542/205449228-3746d519-1857-4ed4-b8dc-ca59047cedb8.png)
+
+
 
 
 Lastly, we provide a truncated data file of monthly total returns by the sectors that we included in our analysis for two months only for copyright reasons. Inspection of this file should, however, help anyone who is interested to run the script to get an idea of what the data inputs look like and create their own datasets. It's important to note that we are analyzing financial data in the form of total returns.
