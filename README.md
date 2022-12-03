@@ -31,15 +31,21 @@ Visual inspection of sector weights and utility rendered by clustering technique
 User can choose the utility specification and rerun the report.	
 Cluster similarity tests based on various methods (Rand, HA, FM, Jaccard) for each cluster method	clusterSimilarityTests.csv
 Portfolio sector allocations as averages for respective clusters from the randomized samples.	R_optimalSectorWeights.csv
-By cluster method, cluster dimensions, utility specification.		
-![image](https://user-images.githubusercontent.com/66026542/205449564-06ca647e-6415-4a90-8d95-e378a95d39c4.png)
+By cluster method, cluster dimensions, utility specification.	
+![image](https://user-images.githubusercontent.com/66026542/205455183-3ea4fedb-73d4-4354-9bce-ef75180b56be.png)
 
 
 
 
 Lastly, we provide a truncated data file of monthly total returns by the sectors that we included in our analysis for two months only for copyright reasons. Inspection of this file should, however, help anyone who is interested to run the script to get an idea of what the data inputs look like and create their own datasets. It's important to note that we are analyzing financial data in the form of total returns.
 
-# Parameter Estimation of Multivariate Stochastic Processes With Skew and Fat Tails
+# Parameter Estimation of Multivariate Stochastic Processes With Skew and Fat Tails And Portfolio Simulations On Local Machine (R_NIG_EM_algorithm.R)
+This script reads the total return data that was used to run the cluster analysis, and estimates the parameters of a multivariate NIG model (normal inverse Gaussian) with the EM algorithm (expectation-maximization algorithm).
 
-# Portfolio Simulation Using the Multivariate Normal Inverse Gaussian Process
+Based on the parameter estimates, we simulate multivariate time series and apply those to various clustered portfolio definition in a Monte Carlo setting. We track in-sample and out-of-sample portfolio metrics associated with each cluster portfolio and each utility specification. We set the default parameters such as the number of Monte Carlo simulation runs to very small number for the user's familiarization purposes. For a fully fledged Monte Carlo analysis, we recommend to leverage on cloud computing exploiting parallel processing.
+
+# Cloud-based Monte Carlo Portfolio Simulation Based the Multivariate Normal Inverse Gaussian Processes (R_NIG_Simulations_cloud.R)
+Run the Monte Carlo simulations based on selected cluster analysis based portfolios and simulated multivariate NIG processes on the cloud. Tracking of same metrics as in the previous script above on the local machine (R_NIG_EM_algorithm.R).
+
+
 
