@@ -1,4 +1,4 @@
-# Portfolio-Construction-Cluster-Analysis-First-Principles-Preference-Theory
+# Portfolio Construction Cluster Analysis First-Principles Preference Theory
 This repository contains the code of the "Portfolio Construction Using First Principles Preference Theory and Machine Learning" article that was published in the Journal of Financial Data Science. The paper is accessible through this link:
 
 https://jfds.pm-research.com/content/2/4/105.short
